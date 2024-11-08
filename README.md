@@ -1,122 +1,64 @@
 
+### **README.md - Projeto Cadastro de Pessoa Jurídica (Em Desenvolvimento)**
 
-### **README.md**
+```markdown
+# 📋 Cadastro de Pessoa Jurídica – JR DIAS
 
+## 🚧 Status do Projeto
+**Em Desenvolvimento** ⚠️  
+Este projeto está em fase inicial de desenvolvimento. Ainda estamos implementando as funcionalidades e validando os requisitos. Atualizações serão feitas regularmente.
 
-# Cadastro de Pessoa Jurídica – JR DIAS
+## 📖 Sobre o Projeto
+O objetivo deste projeto é criar uma interface web para automatizar o processo de cadastro de Pessoa Jurídica, que atualmente é feito manualmente. A solução visa agilizar o registro de novos clientes e permitir que os vendedores acompanhem as informações dos cadastros realizados, facilitando a consulta e análise de dados.
 
-## 📋 Sobre o Projeto
-Este projeto tem como objetivo automatizar o processo de cadastro de Pessoa Jurídica, que atualmente é realizado manualmente. A interface web foi desenvolvida para agilizar o registro de novos clientes e permitir que vendedores possam acessar e visualizar os cadastros realizados, facilitando a consulta e a análise de dados.
+## 🎯 Objetivos
+- Automatizar o processo de cadastro de Pessoa Jurídica.
+- Reduzir erros e inconsistências no registro manual.
+- Facilitar o acesso dos vendedores às informações dos clientes.
 
-## ✨ Funcionalidades
-- Cadastro completo de Pessoa Jurídica.
-- Preenchimento automático de campos através da consulta de CNPJ via API.
-- Interface responsiva e acessível para desktop e dispositivos móveis.
-- Controle de acesso para clientes e vendedores.
-- Upload de documentos necessários para o cadastro.
+## 🛠️ Tecnologias Utilizadas
+- **HTML5:** Estrutura da interface.
+- **CSS3:** Estilização e responsividade.
+- **JavaScript (ES6+):** Validação de dados e integração com APIs.
+- **BrasilAPI:** Consulta de CNPJ para preenchimento automático de dados.
 
-## 📝 Escopo
-- **Clientes:** Realizarão o cadastro diretamente na interface web.
-- **Vendedores:** Poderão acessar e visualizar os cadastros realizados para consulta e análise.
-
-## 📑 Campos do Cadastro
+## 📑 Funcionalidades Planejadas
 ### 1. **Dados da Pessoa Jurídica**
-- Razão Social
-- Nome Fantasia
-- CNPJ
-- Inscrição Estadual
-- Ramo de Atividade
-- Data de Fundação
-- Capital Social
-- Endereço (Logradouro, Número e Complemento, Bairro, Cidade, UF, CEP)
-- Telefone(s)
-- E-mail
-- Site
-- Nome do Contador
-- Telefone do Contador
+- Cadastro de Razão Social, Nome Fantasia, CNPJ, Inscrição Estadual, e outros detalhes da empresa.
+- Validação automática do CNPJ com preenchimento de dados via API.
 
 ### 2. **Dados dos Sócios**
-Cada sócio terá os seguintes campos:
-- Nome
-- Endereço (Logradouro, Número e Complemento, Bairro, Cidade, UF, CEP)
-- Telefone(s) de Contato
-- E-mail
+- Cadastro de informações dos sócios, incluindo Nome, Endereço, Telefone e E-mail.
 
 ### 3. **Referências Comerciais**
-Para cada fornecedor, incluir:
-- Nome do Fornecedor
-- Telefone
-- Ramo
-- Contato
-- Cliente Desde (Data)
-- Compra Acumulada
-- Data da Última Compra
-- Valor da Última Compra
-- Data da Maior Compra
-- Valor da Maior Compra
-- Limite de Crédito
-- Forma de Pagamento (À Vista/A Prazo)
-- Pontualidade (Sim/Não)
+- Cadastro de até 5 fornecedores, com informações detalhadas sobre cada referência.
 
 ### 4. **Referências Bancárias**
-Até 2 bancos podem ser cadastrados, com os seguintes campos:
-- Banco
-- Agência
-- Conta
-- Data de Abertura
-- Telefone
-- Gerente
-- Observações
+- Cadastro de até 2 bancos com informações como Agência, Conta e Gerente.
 
-### 5. **Dados do Vendedor/Representante**
-- Média de Compras Mensal (Projetada)
-- Limite de Crédito Sugerido
-- Parecer do Vendedor
+### 5. **Dados do Vendedor**
+- Registro de informações do vendedor, incluindo média de compras e limite de crédito sugerido.
 
-## 🛠️ Requisitos Não Funcionais
-### 1. **Segurança**
-- Autenticação e controle de acesso para clientes e vendedores.
-- Criptografia para dados sensíveis (CNPJ, informações bancárias).
-- Validação de campos para evitar entradas inválidas.
+```
 
-### 2. **Usabilidade**
-- Interface responsiva e acessível para desktop e celular.
-- Mensagens de erro claras e sugestivas para facilitar a correção dos dados.
-- Indicação visual para campos obrigatórios.
+## 📆 Próximos Passos
+- [ ] Fazer a interface Web
+- [ ] Implementar validação e preenchimento automático dos campos de CNPJ.
+- [ ] Adicionar funcionalidades de Referências Comerciais e Bancárias.
+- [ ] Integrar controle de acesso para clientes e vendedores.
+- [ ] Testes de usabilidade e segurança.
 
+## 🛡️ Requisitos de Segurança
+- Criptografia para dados sensíveis (CNPJ e informações bancárias).
+- Validações contra entradas inválidas e ataques de injeção.
 
-## 🔗 Integrações
-- **Consulta de CNPJ:** Integração com a API da Receita WS para validação automática do CNPJ e preenchimento de dados da empresa.
+## 📚 Recursos e Referências
+- [Receita WS - Consulta de CNPJ](https://brasilapi.com.br/docs#tag/CNPJ)
 
-## 🖥️ Protótipo da Interface
-O wireframe foi criado para demonstrar a interface e inclui:
-- Layout da página de cadastro.
-- Posicionamento dos campos e seções.
-- Indicação de validações e mensagens de erro.
-
-## 🧪 Plano de Testes
-### Testes Funcionais
-- Verificação de preenchimento correto de todos os campos.
-- Preenchimento automático a partir da consulta de CNPJ.
-
-### Testes de Usabilidade
-- Avaliação da facilidade de uso e clareza da interface.
-
-### Testes de Segurança
-- Validação contra injeção de SQL, Cross-Site Scripting (XSS).
-
-### Testes de Compatibilidade
-- Testes em diferentes navegadores (Chrome, Firefox, Edge) e dispositivos (desktop, tablet, celular).
-
-## 📄 Documentos Necessários para Cadastro
-Os clientes devem anexar cópias dos seguintes documentos:
-- Contrato Social e última alteração.
-- Cartão CNPJ atualizado.
-- Relação de faturamento dos últimos 12 meses, assinada pelo contador.
-
-## 📚 Anexos
-- **Glossário:** Definição de termos utilizados (ex.: CNPJ, Inscrição Estadual).
-- **Referências Externas:** Links para APIs de consulta de CNPJ e documentação de integração.
+## 📫 Contato
+Se tiver dúvidas ou sugestões, entre em contato:
+- **E-mail:** contato@jrdias.com
+- **LinkedIn:** [JR Dias](https://www.linkedin.com/in/jrdias/)
 
 
 
