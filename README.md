@@ -2,7 +2,7 @@
 
 ### **README.md**
 
-```markdown
+
 # Cadastro de Pessoa Jurídica – JR DIAS
 
 ## 📋 Sobre o Projeto
@@ -121,6 +121,5 @@ Os clientes devem anexar cópias dos seguintes documentos:
 - **Glossário:** Definição de termos utilizados (ex.: CNPJ, Inscrição Estadual).
 - **Referências Externas:** Links para APIs de consulta de CNPJ e documentação de integração.
 
-   ```
 
 
