@@ -84,9 +84,6 @@ Até 2 bancos podem ser cadastrados, com os seguintes campos:
 - Mensagens de erro claras e sugestivas para facilitar a correção dos dados.
 - Indicação visual para campos obrigatórios.
 
-### 3. **Desempenho e Escalabilidade**
-- Otimização para desempenho rápido e eficiente.
-- Escalabilidade para permitir o crescimento do número de cadastros e integração futura com sistemas de ERP.
 
 ## 🔗 Integrações
 - **Consulta de CNPJ:** Integração com a API da Receita WS para validação automática do CNPJ e preenchimento de dados da empresa.
