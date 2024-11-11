@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoa Jurídica</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+  <h1>Cadastro de Pessoa Jurídica</h1>
+
+  <!-- Dados da Pessoa Jurídica -->
+  <div class="form-group">
+    <label for="cnpj">CNPJ:</label>
+    <input type="text" id="cnpj" placeholder="Digite o CNPJ" required>
+  </div>
+
+  <div class="form-group">
+    <label for="razaoSocial">Razão Social:</label>
+    <input type="text" id="razaoSocial" placeholder="Razão Social" required>
+  </div>
+
+  <div class="form-group">
+    <label for="nomeFantasia">Nome Fantasia:</label>
+    <input type="text" id="nomeFantasia" placeholder="Nome Fantasia" required>
+  </div>
+
+  <div class="form-group">
+    <label for="inscricaoEstadual">Inscrição Estadual:</label>
+    <input type="text" id="inscricaoEstadual" placeholder="Inscrição Estadual" required>
+  </div>
+
+  <div class="form-group">
+    <label for="ramoAtividade">Ramo de Atividade:</label>
+    <input type="text" id="ramoAtividade" placeholder="Ramo de Atividade" required>
+  </div>
+
+  <div class="form-group">
+    <label for="dataFundacao">Data de Fundação:</label>
+    <input type="date" id="dataFundacao" required>
+  </div>
+
+  <div class="form-group">
+    <label for="capitalSocial">Capital Social (R$):</label>
+    <input type="number" id="capitalSocial" placeholder="Digite o valor em reais (R$)" required>
+  </div>  
+
+  <!-- Endereço -->
+  <h2>Endereço</h2>
+  <div class="form-group">
+    <label for="logradouro">Logradouro:</label>
+    <input type="text" id="logradouro" placeholder="Logradouro" required>
+  </div>
+
+  <div class="form-group">
+    <label for="numeroComplemento">Número/Complemento:</label>
+    <input type="text" id="numeroComplemento" placeholder="Número e Complemento" required>
+  </div>
+
+  <div class="form-group">
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" placeholder="Bairro" required>
+  </div>
+
+  <div class="form-group">
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" placeholder="Cidade" required>
+  </div>
+
+  <div class="form-group">
+    <label for="uf">UF:</label>
+    <input type="text" id="uf" value="PR" readonly>
+  </div>
+
+  <div class="form-group">
+    <label for="telefones">Telefone:</label>
+    <input type="text" id="telefones" placeholder="Telefones" required>
+  </div>
+
+  <div class="form-group">
+    <label for="conta">Conta:</label>
+    <input type="text" id="conta" placeholder="Número da Conta" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="E-mail" required>
+  </div>
+
+  <div class="form-group">
+    <label for="site">Site:</label>
+    <input type="url" id="site" placeholder="Site">
+  </div>
+
+  <div class="form-group">
+    <label for="contador">Contador:</label>
+    <input type="text" id="contador" placeholder="Nome do Contador" required>
+  </div>
+
+  <div class="form-group">
+    <label for="telefoneContador">Telefone do Contador:</label>
+    <input type="text" id="telefoneContador" placeholder="Telefone do Contador" required>
+  </div>
+
+  <!-- Dados dos Sócios -->
+<h2>Dados dos Sócios</h2>
+<div id="partners-container"></div>
+<button type="button" id="add-partner" class="add-partner">+ Adicionar Sócio</button>
+
+<h3>Referências Comerciais</h3>
+<div id="commercial-refs-container"></div>
+<button id="add-commercial-ref">Adicionar Referência Comercial</button>
+
+<h3>Referências Bancárias</h3>
+<div id="bank-refs-container"></div>
+<button id="add-bank-ref">Adicionar Referência Bancária</button>
+
+
+  <button type="submit">Salvar Cadastro</button>
+</body>
+</html>
